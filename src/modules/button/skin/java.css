@@ -1,0 +1,22 @@
+
+
+.button {
+  width: 220px;
+  height: 50px;
+
+  margin-right: 1vw;
+
+  background-color: #db423c;
+  color: white;
+
+  font-family: "minion-pro", serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-style: normal;
+
+  cursor: default;
+  user-select: none;
+  transform: scale 0.2s ease-in-out;
+}
+
+

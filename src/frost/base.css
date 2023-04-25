@@ -1,0 +1,43 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  
+  Google recommendation to work-around Flash of unstyled content (FOUC) using web-components
+  Issue: https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM
+  Google: https://web.dev/custom-elements-v1/#prestyle
+*/
+
+my-button:not(:defined),
+my-toolbar:not(:defined),
+my-footer:not(:defined),
+my-toolbar:not(:defined),
+my-section:not(:defined),
+my-double:not(:defined),
+my-hero:not(:defined),
+my-hero-button:not(:defined),
+my-about:not(:defined),
+my-page:not(:defined),
+my-grid:not(:defined),
+my-home:not(:defined) {
+  opacity: 0;
+}
+
+my-button,
+my-toolbar,
+my-footer,
+my-toolbar,
+my-section,
+my-double,
+my-hero,
+my-hero-button,
+my-about,
+my-page,
+my-grid,
+my-home {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}

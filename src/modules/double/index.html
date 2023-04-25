@@ -1,0 +1,31 @@
+<template>
+
+  <div class="wrapper flex">
+    <div class="text-wrapper text-head">
+      <h3><span slot="my-head">Head2 placeholder</span></h3>
+    </div>
+    <div class="image-wrapper">
+      <div class="image-frame">
+        <!-- <img slot="my-image" id="image" class="image" alt="coffee_shop" /> -->
+
+        <div class="image"> 
+          <slot name="my-image" class="img">
+          </slot>
+        </div>
+      
+        
+
+
+
+        <!-- <span slot="my-image" id="image" class="image" alt="coffee_shop">
+
+          </span> -->
+
+      </div>
+    </div>
+    <div class="text-wrapper text-body">
+      <slot name="my-body"> “This is the fallback text only” </slot>
+    </div>
+  </div>
+
+</template>

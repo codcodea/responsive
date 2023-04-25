@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.toolbar-container {
+	display: grid;
+	grid-template-columns: 200px auto 200px;
+	height: 90px;
+	z-index: 3;
+	margin: 0;
+	color: var(--black-faded);
+	opacity: 0.9;
+}
+
+.toolbar-container.spa {
+	background-color: var(--bg-gray);
+}
+
+a {
+	text-decoration: none;
+	color: var(--black);
+	letter-spacing: 1px;
+	user-select: none;
+}
+
+/* it works - does not uppercase the logo but toolbar links, if SPA (Frost and Magazine) */
+.spa a:not(:has(#logo)) {
+	text-transform: uppercase;
+}
+
+.spa .social {
+	display: none;
+}
+
+.social img {
+	margin-left: 3px;
+}
+
+.logo {
+	grid-column: 1;
+	font-size: 2rem;
+	color: var(--black);
+	cursor: default;
+	user-select: none;
+}
+
+.links {
+	grid-column: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-container {
+	grid-column: 3;
+	display: flex;
+	gap: 10px;
+	user-select: none;
+	opacity: 0.8;
+}
+
+.button-container {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.toolbar-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* .variant-java li,
+	a {
+		background-color: hsl(30, 57%, 11%);
+		color: #fafafa;
+		padding: 5px 5px;
+		margin: 0 5px;
+		transition: 0.3s;
+	}
+
+	.variant-java li:hover,
+	a:hover {
+		scale: 1.1;
+	} */
+
+	.logo {
+		display: none;
+	}
+
+	ul {
+		display: inline-block;
+	}
+
+	.button-container {
+		display: none;
+	}
+
+	li {
+		padding: 5px;
+		font-size: 1em;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.toolbar-container {
+		grid-template-columns: auto auto;
+	}
+
+	.logo {
+		grid-column: 1;
+		font-size: 1.8em;
+	}
+
+	.links {
+		grid-column: 2;
+	}
+
+	.button-container {
+		display: none;
+	}
+}
+
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+}
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+	.toolbar-container {
+		grid-template-columns: 300px auto 300px;
+		height: 100px;
+	}
+
+	li {
+		display: inline;
+		padding: 10px;
+		font-size: 1.4em;
+	}
+}

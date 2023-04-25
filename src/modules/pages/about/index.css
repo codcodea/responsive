@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	display: flex;
+	justify-content: flex-end;
+	/* width: 95%; */
+	padding: 10vh 6vw 15vh 6vw;
+}
+
+section:last-of-type {
+	margin-bottom: 20vh;
+}
+
+my-form {
+	margin: 0 auto;
+}
+
+img {
+	width: 900px;
+	max-width: 90%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	margin-right: 6vw;
+	filter: brightness(100%) contrast(90%) saturate(90%);
+}
+
+@media screen and (max-width: 768px) {
+	img {
+		width: 60%;
+		object-position: right top;
+		aspect-ratio: 5/7;
+	}
+
+	section {
+		justify-content: flex-end;
+		align-items: center;
+		margin: 10% 0 50%;
+		padding: 0 0 0 0;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	section:last-of-type {
+		margin-bottom: 25vh;
+	}
+}

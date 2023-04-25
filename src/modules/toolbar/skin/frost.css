@@ -1,0 +1,20 @@
+
+
+* {
+  font-family: ltc-bodoni-175, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 480px) {
+  .variant-java li, a {
+    background-color: hsla(211, 82%, 11%, 0.305);
+    border-radius: 2px;
+    padding: 5px; 
+    transition: background-color 0.4s ease-in;
+  }
+
+  a:hover {
+    background-color: hsla(204, 100%, 2%, 0.961);
+  }
+}

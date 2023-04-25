@@ -1,0 +1,17 @@
+
+.footer-logo {
+  font-size: 2rem;
+}
+
+.footer-links {
+  display: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.footer-wrapper  {
+  margin-top: 15vh;
+  background-color: transparent;
+}

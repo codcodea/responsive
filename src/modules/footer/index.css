@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	height: 35vh;
+	margin: 0;
+	background-color: var(--bg-gray);
+	color: var(--black-faded);
+}
+
+.footer-logo {
+	grid-column: 1;
+	font-size: 2.5rem;
+}
+
+.footer-contact {
+	grid-column: 2;
+}
+
+.footer-links {
+	grid-column: 3;
+}
+
+.footer-projects {
+	grid-column: 4;
+}
+
+.button-container {
+	grid-column: 3;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	gap: 10px;
+	opacity: 0.66;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #252525;
+}
+
+td:first-child {
+	font-variant: all-petite-caps;
+	text-align: center;
+	padding-right: 0.5em;
+}
+
+.footer-projects {
+	display: none;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+	.footer-wrapper {
+		display: block;
+		height: 25vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.footer-logo {
+		font-size: 2.5rem;
+	}
+
+	.footer-contact {
+		grid-row: 2;
+		width: 100vw;
+	}
+
+	.footer-links {
+		display: none;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.footer-wrapper {
+		/* background-color: #131211; */
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		height: 35vh;
+	}
+
+	.button-container {
+		display: none;
+	}
+
+	.footer-projects {
+		display: none;
+	}
+
+	.footer-links {
+		display: none;
+	}
+}
+
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+	.footer-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		height: 35vh;
+		margin: 0;
+	}
+	.footer-links {
+		display: none;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+
+	.footer-logo {
+		font-size: 2.5em;
+	}
+
+	.footer-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		height: 45vh;
+	}
+
+	.footer-wrapper {
+		margin: 0;
+	}
+
+	.footer-links {
+		display: none;
+	}
+}

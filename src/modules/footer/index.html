@@ -1,0 +1,50 @@
+
+<template>
+  <div class="footer-wrapper">
+    <div class="footer-logo flex">
+      <slot name="logo"></slot>
+    </div>
+    <div class="footer-contact flex">
+      <table>
+        <tr>
+          <td>Address:</td>
+          <td id="adress">
+            <slot name="adress"></slot>
+          </td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td id="phone">
+            <slot name="phone"></slot>
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td id="email">
+            <slot name="email"></slot>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="button-container flex">
+      <img
+        src="../../public/java/instagram.svg"
+        width="20px"
+        height="20px"
+        alt="instagram"
+      />
+      <img
+        src="../../public/java/facebook.png"
+        width="20px"
+        height="20px"
+        alt="facebook"
+      />
+      <img
+        src="../../public/java/twitter.png"
+        width="20px"
+        height="20px"
+        alt="twitter"
+      />
+    </div>
+  </div>
+</template>

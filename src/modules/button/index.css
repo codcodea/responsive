@@ -1,0 +1,28 @@
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.button-style {
+	width: 120px;
+	height: 60px;
+	background-color: #000;
+	color: white;
+	scale: 1;
+	transition: scale 320ms ease;
+}
+
+.button-style:hover {
+	scale: 1.02;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* 
+	Media Queries for reference:
+	@media only screen and (max-width: 480px){}
+	@media only screen and (min-width: 481px) and (max-width: 768px){}
+	@media only screen and (min-width: 769px) and (max-width: 992px){}
+	@media only screen and (min-width: 993px) and (max-width: 1200px){} 
+*/

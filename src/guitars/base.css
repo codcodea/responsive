@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+my-button:not(:defined),
+my-toolbar:not(:defined),
+my-footer:not(:defined),
+my-toolbar:not(:defined),
+my-section:not(:defined),
+my-double:not(:defined),
+my-hero:not(:defined),
+my-hero-button:not(:defined),
+my-about:not(:defined),
+my-page:not(:defined),
+my-grid:not(:defined),
+my-home:not(:defined),
+my-form:not(:defined) {
+  opacity: 0;
+}
+
+my-button,
+my-toolbar,
+my-footer,
+my-toolbar,
+my-section,
+my-double,
+my-hero,
+my-hero-button,
+my-about,
+my-page,
+my-grid,
+my-home,
+my-form {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}

@@ -1,0 +1,9 @@
+
+/* Each website will store its component specific CSS here */
+
+* {
+  font-family: ltc-bodoni-175, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}

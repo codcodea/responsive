@@ -1,0 +1,28 @@
+
+
+.button {
+	margin-right: 1vw;
+	background-color: #000;
+	color: white;
+	font-size: 1.1em;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	cursor: default;
+	user-select: none;
+	transform: scale 0.2s ease-in-out;
+}
+
+.button-style {
+	width: 120px;
+	height: 60px;
+	background-color: #000;
+	color: white;
+	scale: 1;
+	transition: scale 320ms ease;
+}
+
+.button-style:hover {
+	scale: 1.02;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}

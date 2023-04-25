@@ -1,0 +1,73 @@
+
+/* This is the main style-sheet used for all frost-based-templates */
+
+@import "./base.css";
+
+:root {
+	--bg-container: #f8f8f8;
+	--bg-gray: #e4e4e4;
+	--black: #252525;
+	--black-faded: #363636;
+	--black-licorice: #1b1212;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 2200px;
+	width: 85%;
+	background-color: var(--bg-container);
+	opacity: 0;
+	visibility: hidden;
+	overflow-x: hidden;
+}
+
+.container.loaded {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 1s ease, visibility 0s;
+}
+
+#root {
+	min-height: 100vh; /* 100vh to hold the frame during transisions */
+	opacity: 0;
+	visibility: hidden;
+}
+
+#root.loaded {
+	min-height: unset;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 1s ease, visibility 0s;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+	.container {
+		margin: 0 auto;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	footer {
+		margin-top: 10vh;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+}
+
+/* LapTop */
+@media only screen and (min-width: 769px) and (max-width: 1900px) {
+	.container {
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+}

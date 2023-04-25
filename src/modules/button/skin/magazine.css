@@ -1,0 +1,15 @@
+
+.button {
+	margin-right: 1vw;
+	background-color: #000;
+	color: white;
+	font-size: 1.1em;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	cursor: default;
+	user-select: none;
+	transform: scale 0.2s ease-in-out;
+}
+
+

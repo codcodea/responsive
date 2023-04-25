@@ -1,0 +1,75 @@
+
+<template>
+  <div class="form-wrapper">
+    <form
+      method="get"
+      action="./index.html"
+    >
+      <fieldset>
+        <legend>&nbsp; Contact form &nbsp;</legend>
+        <label for="subject">Your request:</label> <br />
+        <input
+          placeholder="Subject"
+          list="subjects"
+          name="subject"
+          id="subject"
+          autofocus
+        />
+
+        <datalist id="subjects">
+          <option value="Subscribe"></option>
+          <option value="Feedback"></option>
+          <option value="Complaint"></option>
+        </datalist>
+
+        <br />
+
+        <label for="name">Name: </label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+        <br />
+
+        <label for="homepage">Link <i>(optional)</i>: </label><br />
+         <!-- use type url if pattern is required -->
+        <input
+          type="text" 
+          id="homepage"
+          name="homepage"
+          placeholder="twitter.com/1125"
+        />
+        <br />
+        <label for="message">Your message: </label><br />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Aa..."
+          rows="5"
+        ></textarea>
+
+        <br />
+        <br />
+
+        <label for="file">Attach a file <i>(optional)</i></label><br />
+        <input type="file" id="file" name="file" /><br />
+
+        <br />
+      </fieldset>
+      <input id="submit" type="submit" value="Send" />
+    </form>
+  </div>
+</template>

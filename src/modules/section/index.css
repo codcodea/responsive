@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.section-wrapper {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto 300px;
+	padding: 5vh 0;
+	margin: 1vw 1vw 0 1vw;
+}
+
+.section-image-wrapper {
+	grid-row: 1;
+	grid-column: 1 / 3;
+	width: 100%;
+}
+
+.section-image {
+	width: 100%;
+	height: 40vh;
+	object-fit: cover;
+}
+
+.section-text-wrapper {
+	grid-row: 2;
+	grid-column: 1 / 2;
+	padding: 2vh 0;
+	font-weight: 400;
+	font-style: normal;
+	color: #252525;
+}
+
+.section-text-button {
+	grid-row: 2;
+	grid-column: 2 / 3;
+}
+
+.fade-in {
+	opacity: 1;
+	transform: translateX(10vh);
+	transition: transform 0.2s ease-out;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+	.section-wrapper {
+		display: block;
+		position: relative;
+		padding: 0;
+		margin: 5vh auto;
+		width: 90%;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		border-radius: 5px;
+	}
+
+	.section-image-wrapper {
+		display: flex;
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		border-radius: 5px;
+	}
+
+	.section-image {
+		width: 100%;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+
+	.section-text-wrapper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 90%;
+		height: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba(0, 0, 0, 0.5);
+		color: rgb(244, 244, 244);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		letter-spacing: 0.06em;
+		transition: background-color 2s ease, width 0.2s ease, height 0.2s ease;
+	}
+
+	.section-text-wrapper:hover {
+		background-color: rgba(0, 0, 0, 0.56);
+		width: 90%;
+		height: 55%;
+	}
+
+	.section-text-button {
+		display: none;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	p {
+		font-size: 1.1rem;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.section-wrapper {
+		display: block;
+		position: relative;
+		padding: 0;
+		margin: 0 auto 10vh auto;
+		width: 400px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		border-radius: 5px;
+	}
+	.section-image-wrapper {
+		display: flex;
+		position: relative;
+		width: 100%;
+		border-radius: 5px;
+	}
+
+	.section-image {
+		width: 100%;
+		aspect-ratio: 1/2;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+
+	.section-text-wrapper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 90%;
+		height: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba(0, 0, 0, 0.5);
+		color: rgb(244, 244, 244);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		transition: background-color 2s ease, width 0.2s ease, height 0.2s ease;
+	}
+
+	.section-text-wrapper:hover {
+		background-color: rgba(0, 0, 0, 0.56);
+		width: 90%;
+		height: 60%;
+	}
+
+	h1 {
+		letter-spacing: 0.05em;
+	}
+
+	p {
+		margin-top: 1vh;
+		font-size: 1.3em;
+	}
+
+	.section-text-button {
+		display: none;
+	}
+}
+
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+	.section-wrapper {
+		width: 40vw;
+		/* height: 40vw; */
+		display: grid;
+		grid-template-rows: 300px 100px;
+		grid-template-columns: 1fr;
+		align-content: center;
+		padding: 0;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	.section-image {
+		width: 100%;
+		object-fit: cover;
+		height: 300px;
+		overflow: hidden;
+	}
+
+	.section-text-wrapper {
+		padding-top: 15px;
+		padding-left: 10px;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	.section-text-button {
+		display: none;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+	.section-wrapper {
+		margin: 4vw 4vw 0 4vw;
+	}
+
+	.section-image {
+		height: 60vh;
+		transition: scale 1s ease;
+	}
+
+	.section-image-wrapper {
+		overflow: hidden;
+	}
+
+	.section-image:hover {
+		scale: 1.03;
+	}
+
+	h1 {
+		font-size: 2.2em;
+	}
+
+	p {
+		font-size: 1.5em;
+		letter-spacing: 0.05em;
+	}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "responsive",
+  "version": "1.0.0",
+  "description": "",
+  "source": [
+    "src/index.html",
+    "src/devices/index.html",
+    "src/frost/index.html",
+    "src/magazine/index.html",
+    "src/java/index.html",
+    "src/java/contact.html",
+    "src/java/about.html",
+    "src/java/testimonials.html",
+    "src/guitars/index.html",
+    "src/guitars/about.html",
+    "src/guitars/contact.html",
+    "src/guitars/openhours.html"
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/devices/index.html",
+    "build": "parcel build "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/optimizer-data-url": "^2.8.3",
+    "@parcel/transformer-inline-string": "^2.8.3",
+    "autoprefixer": "^10.4.14",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.23",
+    "postcss-modules": "^4.3.1",
+    "process": "^0.11.10",
+    "util": "^0.12.5"
+  }
+}

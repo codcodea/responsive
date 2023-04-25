@@ -1,0 +1,168 @@
+
+@import "./base.css";
+
+body {
+  background-color: hsl(30, 57%, 11%);
+  opacity: 1;
+}
+
+img{
+  width: 100%;
+}
+
+section {
+  margin-top: 10vw;
+  opacity: 0;
+}
+
+section.loaded {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1900px;
+  width: 90%;
+  overflow: hidden;
+  background-color: hsl(6, 42%, 95%);
+}
+
+.hero-wrapper {
+  padding: 4vw;
+  overflow: hidden;
+}
+
+.hero-frame {
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: scale 0.7s ease-in-out;
+}
+
+.hero-image:hover {
+  scale: 1.015;
+}
+
+.video {
+  padding: 4vw;
+}
+
+/* the contact map */
+
+iframe {
+  width: 80%;
+  aspect-ratio: 16/9;
+  margin: auto;
+}
+
+section iframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15)) saturate(100%)
+    contrast(90%);
+  mix-blend-mode: multiply;
+  margin-bottom: 5vh;
+}
+
+p::first-letter {
+  font-weight: bold;
+  color: red;
+}
+
+.testimonials {
+  width: 70%;
+  margin: auto;
+  font-size: large;
+}
+
+.testimonials p {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin: 1vh auto;
+  padding: 0 5vw;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-wrapper {
+    padding: 4vw;
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    aspect-ratio: 5/7;
+    object-fit: cover;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-wrapper {
+    padding: 4vw;
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    aspect-ratio: 5/7;
+    object-fit: cover;
+  }
+}
+
+/* LapTop */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  p {
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+    line-height: 1.04;
+    text-align: center;
+  }
+
+  p::first-letter {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #eb2821;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+  p {
+    font-size: 1.7em;
+    letter-spacing: 0.05em;
+    line-height: 1.04;
+    text-align: center;
+    text-rendering: geometricPrecision;
+  }
+
+  p::first-letter {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #eb2821;
+  }
+}

@@ -1,0 +1,14 @@
+* {
+  font-family: "linotype-didot", serif;
+}
+
+
+.footer-wrapper {
+  font-family: "linotype-didot", serif;
+  background-color: #131211;
+  color: #ececec;
+}
+
+.button-container {
+ filter: invert(1);
+}

@@ -1,0 +1,26 @@
+
+* {
+  font-family: "linotype-didot", serif;
+  letter-spacing: 0.02em;
+}
+.toolbar-container.spa {
+  background-color: #131211;
+  font-family: "linotype-didot", serif;
+}
+
+a {
+  color: #ececec;
+  font-family: "linotype-didot", serif;
+}
+
+
+.spa a:hover:not(:has(#logo)) {
+  text-transform: uppercase;
+  color: rgb(160, 45, 45)
+}
+
+@media only screen and (max-width: 480px) {
+  .variant-java li, a {
+    background-color: unset;
+  }
+}

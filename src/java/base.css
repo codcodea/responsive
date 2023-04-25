@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Times, sans-serif;
+}
+
+my-button:not(:defined),
+my-footer:not(:defined),
+my-toolbar:not(:defined),
+my-double:not(:defined),
+my-hero-button:not(:defined),
+my-form:not(:defined){
+  opacity: 0;
+}
+
+my-button,
+my-toolbar,
+my-footer,
+my-double,
+my-hero-button,
+my-form {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
