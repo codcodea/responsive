@@ -36,7 +36,7 @@ class ImageGrid extends HTMLElement {
       div.classList.add("grid-item-wrapper");
 
       let img = document.createElement('img');
-      img.src = new URL(image, import.meta.url);
+      img.src = image;
       document.body.appendChild(img);
 
       // const img = document.createElement("img");

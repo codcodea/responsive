@@ -16,7 +16,7 @@ const iframe = document.querySelector("iframe");
 function handleDevice(e, mobile = false) {
 
 	// open wireframes
-	if (e.target.id === "wireframe") return openWindow("../wireframe", "_blank");
+	if (e.target.id === "wireframe") return openWindow(store.getWireframePath());
 
 	// get and set state
 	const currentDevice = store.getDevice();

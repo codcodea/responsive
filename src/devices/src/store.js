@@ -14,12 +14,10 @@ class Store {
     magazine: "../../magazine/index.html",
     java: "../../java/index.html",
     guitars:  "../../guitars/index.html",
-    // frost: new URL("../../frost/index.html"  ,import.meta.url).href,
-    // magazine: new URL("../../magazine/index.html"  ,import.meta.url).href,
-    // java: new URL("../../java/index.html"  ,import.meta.url).href,
-    // guitars:  new URL("../../guitars/index.html"  ,import.meta.url).href,
     open: "",
   };
+
+  wireframePath = "../../wireframe/index.html";
 
   constructor() {
     this.device = "mobile";
@@ -57,6 +55,10 @@ class Store {
 
   getContentPath() {
     return this.contentPath[this.theme];
+  }
+
+  getWireframePath() {
+    return this.wireframePath;
   }
 
   getCurrentDeviceClass() {

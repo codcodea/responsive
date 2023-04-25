@@ -22,7 +22,6 @@ function handleContent(e) {
 
 	// store state and call side effects
 	store.setTheme(theme);
-	console.log(store.getContentPath());
   iframe.src = store.getContentPath(); // order matters
 	transition();
 }

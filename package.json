@@ -14,7 +14,8 @@
     "src/guitars/index.html",
     "src/guitars/about.html",
     "src/guitars/contact.html",
-    "src/guitars/openhours.html"
+    "src/guitars/openhours.html",
+    "src/wireframe/index.html"
   ],
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -31,6 +32,7 @@
     "postcss": "^8.4.23",
     "postcss-modules": "^4.3.1",
     "process": "^0.11.10",
+    "sharp": "^0.31.3",
     "util": "^0.12.5"
   }
 }

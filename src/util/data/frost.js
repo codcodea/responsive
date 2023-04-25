@@ -58,10 +58,10 @@ const page1 = {
   body: "Residential design at Frost creates living spaces, new homes or renovations, reflecting clients' style and meeting their needs. Experienced in designing single-family homes to multi-unit developments. Aims to bring clients' vision to life with functional and attractive spaces.",
   cover: new URL("../../public/frost/r_front.webp", import.meta.url),
   src: [
-    new URL("../../public/frost/r1.webp", import.meta.url),
-    new URL("../../public/frost/r2.webp", import.meta.url),
-    new URL("../../public/frost/r3.webp", import.meta.url),
-    new URL("../../public/frost/r4.webp", import.meta.url)
+    new URL("../../public/frost/r1.webp?as=webp&width=400", import.meta.url),
+    new URL("../../public/frost/r2.webp?as=webp&width=400", import.meta.url),
+    new URL("../../public/frost/r3.webp?as=webp&width=400", import.meta.url),
+    new URL("../../public/frost/r4.webp?as=webp&width=400", import.meta.url)
   ],
   path: "/frost/residential" 
 };
