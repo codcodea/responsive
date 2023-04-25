@@ -13,6 +13,8 @@ class Button extends HTMLElement {
 		this.target = target;
 		this.text = text;
 		this.skin = store?.website || skin;
+
+		this.handleClick = this.handleClick.bind(this);
 	}
 
 	static get observedAttributes() {

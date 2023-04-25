@@ -10,7 +10,7 @@ class HeroButton extends HTMLElement {
   constructor(variant, skin) {
     super();
     this.variant = variant;
-    this.skin = store?.website || skin;
+    this.skin = store?.website ?? skin;
   }
 
   static get observedAttributes() {
