@@ -36,7 +36,7 @@ class Toolbar extends HTMLElement {
 		let skin = document.createElement('style');
 		skin.textContent = skinText;
 
-		shadow.append(node, skin, style);
+		shadow.append(node, style, skin);
 		this.observe();
 	}
 

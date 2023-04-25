@@ -21,7 +21,6 @@ function initApp() {
 	container.style.opacity = 1;
 
 	// set initial content
-	console.log(store.getContentPath());
 	iframe.src = store.getContentPath();
 
 	// add click to the buttons
