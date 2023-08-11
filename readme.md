@@ -2,7 +2,7 @@
 ## Web Components API
 This is a front-end project exploring Web Components API as an alternative to React.js, Angular.js and Vue.js.
 
-app.webben.dev
+web.webben.dev
 
 ### Get started: To run on local machine
 - npm init
@@ -10,10 +10,10 @@ app.webben.dev
 - npm start
 
 ### Web Components in src/modules 
-A library of web components (e.g toolbar, footer, image-grids etc)
+A library of web components (e.g toolbar, footer, image-grids etc).
 
 ### dist/ 
-* the Parcel production build live at app.webben.dev
+* the Parcel production build live at web.webben.dev
 
 ### src/<website>
 1. /devices - the umbrella website
@@ -24,7 +24,7 @@ A library of web components (e.g toolbar, footer, image-grids etc)
 6. /wireframe - display of web components
 
 ### Web technologies
-* Vanilla HTML, CSS och JavaScript only, no libraries
+* Vanilla HTML, CSS och JavaScript only, no external libraries
 * Web Components API
 
 ### Requirements

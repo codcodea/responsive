@@ -23,10 +23,8 @@ class Toolbar extends HTMLElement {
 		this[name] = newValue;
 	}
 
-	async connectedCallback() {
-
-		const shadow = this.attachShadow({ mode: "open" });
-
+    async connectedCallback() {
+        const shadow = this.attachShadow({ mode: "open" });
 		const node = await getTemplate(templateURL);
 
 		const style = document.createElement('style');
@@ -44,12 +42,10 @@ class Toolbar extends HTMLElement {
 		if (this.variant === "spa") {
 			this.setAttributes();
 			this.shadowRoot.querySelectorAll("a").forEach((link) => link.addEventListener("click", this.handleClick));
-		} else {
-
+        } else {
 			// setting links for non-spa please refactor
 			const slots = this.shadowRoot.querySelectorAll("slot");
-			document.querySelectorAll("[data-href]").forEach((link) => {
-
+            document.querySelectorAll("[data-href]").forEach((link) => {
 				const href = link.dataset.href
 				const currentSlot = link.slot;
 
