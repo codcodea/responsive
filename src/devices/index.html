@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="description" content="Viewer for web pages" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/x-icon" href="../public/devices/favicon.png" />
-		<link rel="stylesheet" href="./styles.css" />
-		<title>Viewer</title>
-	</head>
-	<body>
-		<header class="navigator">
-			<section class="button-group flex">
-				<button class="content" id="frost">Frost</button>
-				<button class="content" id="magazine">M-24</button>
-				<button class="content" id="java">Java</button>
-				<button class="content" id="guitars">Guitars</button>
-				<button class="content" id="open">Open</button>
-			</section>
 
-			<section class="button-group flex">
-				<button class="device" id="mobile">Mobile</button>
-				<button class="device" id="tablet">Tablet</button>
-				<button class="device" id="laptop">Laptop</button>
-				<button class="device" id="desktop">Desktop</button>
-				<button class="device" id="wireframe">Wires</button>
-			</section>
-		</header>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Viewer for web pages" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../public/devices/favicon.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Viewer</title>
+</head>
 
-		<main class="container">
-			<!-- <div class="overlay"></div> -->
+<body>
+    <header class="navigator flex">
+        <section class="button-group contents flex">
+            <button class="content" id="frost">Frost</button>
+            <button class="content" id="magazine">M-24</button>
+            <button class="content" id="java">Java</button>
+            <button class="content" id="guitars">Guitars</button>
+            <button class="content open" id="open">Open</button>
+        </section>
 
-			<section id="device-section" class="mobile">
-				<div class="devices mobile-device active">
-					<img src="../public/devices/mobile.webp" alt="" />
-				</div>
-				<div class="devices tablet-device">
-					<img src="../public/devices/tablet.webp" alt="" />
-				</div>
-				<div class="devices laptop-device">
-					<img src="../public/devices/laptop.webp" alt="" />
-				</div>
-				<div class="devices desktop-device">
-					<img src="../public/devices/desktop.webp" alt="" />
-				</div>
-				<iframe class="mobile-iframe" loading="lazy" src="../magazine/index.html"></iframe>
-			</section>
-		</main>
-		<footer>
-			<section class="button-group flex">
-				<button class="device" id="toggle-frame">Frame</button>
-			</section>
-		</footer>
-		<script type="module" src="./main.js"></script>
-	</body>
+        <section class="button-group devices flex">
+            <button class="device" id="mobile">Mobile</button>
+            <button class="device" id="tablet">Tablet</button>
+            <button class="device" id="laptop">Laptop</button>
+            <button class="device" id="desktop">Desktop</button>
+            <button class="device" id="wireframe">About</button>
+        </section>
+    </header>
+
+    <main class="container">
+        <section id="device-section" class="mobile">
+            <div class="devices mobile-device active">
+                <img src="../public/devices/mobile.webp" alt="" />
+            </div>
+            <div class="devices tablet-device">
+                <img src="../public/devices/tablet.webp" alt="" />
+            </div>
+            <div class="devices laptop-device">
+                <img src="../public/devices/laptop.webp" alt="" />
+            </div>
+            <div class="devices desktop-device">
+                <img src="../public/devices/desktop.webp" alt="" />
+            </div>
+            <iframe class="mobile-iframe" loading="lazy" src="../magazine/index.html"></iframe>
+        </section>
+    </main>
+    <footer class="footer button-group flex">
+        <button class="device" id="toggle-frame">Frame</button>
+    </footer>
+    <script type="module" src="./main.js"></script>
+</body>
+
 </html>

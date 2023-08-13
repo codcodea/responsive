@@ -44,7 +44,7 @@ function handleDevice(e, mobile = false) {
 
 	// set store and call side effects
 	store.setDevice(replaceDevice);
-	transition();
+	// transition();
 	scrollToTop();
 }
 

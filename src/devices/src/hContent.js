@@ -23,7 +23,7 @@ function handleContent(e) {
 	// store state and call side effects
 	store.setTheme(theme);
   iframe.src = store.getContentPath(); // order matters
-	transition();
+	// transition();
 }
 
 export default handleContent;
