@@ -1,0 +1,22 @@
+
+<!-- This is the specific HTML-template for the Section component.
+It is possible to store all templates for all components in one single index.html file 
+but this method is used to separate concerns and stay organized -->
+
+<template>
+  <section class="section-wrapper fade-in">
+    <div class="section-image-wrapper">
+      <img id="image" class="section-image" alt="image">
+    </div>
+    <div class="section-text-wrapper">
+      <h1><slot name="my-head">Head placeholder</slot></h1>
+      <p>
+        <slot name="my-body">Body placeholder.</slot>
+      </p>
+    </div>
+    <div class="section-text-button flex">
+      <slot></slot>
+    </div>
+  </section>
+</template>
+<script src="/section.e778dfb7.js"></script>

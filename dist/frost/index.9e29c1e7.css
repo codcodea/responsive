@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+my-button:not(:defined), my-toolbar:not(:defined), my-footer:not(:defined), my-toolbar:not(:defined), my-section:not(:defined), my-double:not(:defined), my-hero:not(:defined), my-hero-button:not(:defined), my-about:not(:defined), my-page:not(:defined), my-grid:not(:defined), my-home:not(:defined) {
+  opacity: 0;
+}
+
+my-button, my-toolbar, my-footer, my-toolbar, my-section, my-double, my-hero, my-hero-button, my-about, my-page, my-grid, my-home {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+:root {
+  --bg-container: #f8f8f8;
+  --bg-gray: #e4e4e4;
+  --black: #252525;
+  --black-faded: #363636;
+  --black-licorice: #1b1212;
+}
+
+.container {
+  max-width: 2200px;
+  width: 85%;
+  background-color: var(--bg-container);
+  opacity: 0;
+  visibility: hidden;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.container.loaded {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s, visibility;
+}
+
+#root {
+  min-height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#root.loaded {
+  min-height: unset;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s, visibility;
+}
+
+@media only screen and (width <= 480px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  footer {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (width >= 481px) and (width <= 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (width >= 769px) and (width <= 1900px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=index.9e29c1e7.css.map */
