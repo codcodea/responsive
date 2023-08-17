@@ -1,33 +1,37 @@
+# Responsive web component library
+This is a responsive web component library using Web Components API. The project aims to explore and evaluate how native web technologies compare to popular front-end frameworks like React.js, Angular.js, and Vue.js.
 
-## Web Components API
-This is a front-end project exploring Web Components API as an alternative to React.js, Angular.js and Vue.js.
+## Web technologies
+* HTML, CSS och JavaScript, no external libraries used
+* Web Components API, shadow DOM and HTML templates
+* Learn more: https://developer.mozilla.org/en-US/docs/Web/API/Web_components
 
+## Guiding principles
+* Components can be used inline, i.e `<my-component props={...args} />` 
+* Components can render on request, i.e `new MyComponent(...args)`
+* Component integrate with database, cache and state management
+
+### Examples use
+Umbrella website with examples of components use on different viewports. 
 web.webben.dev
 
-### Get started: To run on local machine
+## Folder structure 
+
+### Web components / modules
+Reusable modules are found under src/modules, e.g toolbar, footer and image-grids.
+
+### src/
+/devices - the umbrella website </br>
+/frost - the Frost website </br>
+/magazine - the Magazine website </br>
+./public/java - the Riders Cafe website </br>
+/guitars - the vintage guitar website </br>
+/wireframe - display of web components </br>
+
+### dist/ 
+Production build live at web.webben.dev
+
+## Getting Started
 - npm init
 - npm run build
 - npm start
-
-### Web Components in src/modules 
-A library of web components (e.g toolbar, footer, image-grids etc).
-
-### dist/ 
-* the Parcel production build live at web.webben.dev
-
-### src/<website>
-1. /devices - the umbrella website
-2. /frost - the Frost website 
-3. /magazine - the Magazine website 
-4. /java - the Riders Cafe website 
-5. /guitars - the vintage Guitar Museum in Umeå
-6. /wireframe - display of web components
-
-### Web technologies
-* Vanilla HTML, CSS och JavaScript only, no external libraries
-* Web Components API
-
-### Requirements
-* Components can be used inline (Java, Guitars)
-* Components can be used in SPA:s (Frost, Magazine)
-* Components integrate with DB, Cache and State management

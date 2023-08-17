@@ -17,10 +17,6 @@
   display: flex;
 }
 
-#device-section {
-  mix-blend-mode: darken;
-}
-
 .mobile {
   opacity: 1;
   z-index: 1;
@@ -30,7 +26,7 @@
   background-color: #fff;
   transition: opacity .4s ease-in;
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
   transform: scale(.7)translate(-50%, -50%);
 }
@@ -67,7 +63,7 @@
   background-color: #fff;
   transition: opacity .4s ease-in;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: scale(.8)translate(-50%, -50%);
 }
@@ -105,7 +101,7 @@
   background-color: #fff;
   transition: opacity .4s ease-in;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: scale(.8)translate(-50%, -50%);
 }
@@ -144,7 +140,7 @@
   background-color: #fff;
   transition: opacity .4s ease-in;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: scale(.65)translate(-50%, -50%);
 }
@@ -176,7 +172,7 @@
 body {
   height: 100vh;
   background-color: var(--bg-color);
-  grid-template: 140px auto 140px / 1fr;
+  grid-template: 140px auto 70px / 1fr;
   display: grid;
 }
 
@@ -217,6 +213,16 @@ body {
 }
 
 .button-group .device {
+  color: #969696;
+  background-color: #2d2d2d;
+}
+
+.button-group .device:last-of-type {
+  color: #181818;
+  background-color: #cbbfae;
+}
+
+.button-group .footer {
   color: #969696;
   background-color: #2d2d2d;
 }

@@ -12,7 +12,7 @@ const iframe = document.querySelector("iframe");
 
 // opens a new window
 export function openWindow(path) {
-	window.open(path, "_blank");
+	window.open(path, "_self");
 }
 
 // handle css transition effects

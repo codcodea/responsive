@@ -1,9 +1,4 @@
 
-/* removes the white background */
-
-#device-section {
-    mix-blend-mode: darken;
-}
 
 /* 
   //////// Mobile /////////
@@ -14,7 +9,7 @@
     z-index: 1;
 
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
     transform: scale(0.7) translate(-50%, -50%);
     transform-origin: top left;
@@ -59,7 +54,7 @@
     z-index: 1;
 
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: scale(0.8) translate(-50%, -50%);
     transform-origin: top left;
@@ -105,7 +100,7 @@
     transition: opacity 0.4s ease-in;
 
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: scale(0.8) translate(-50%, -50%);
     transform-origin: top left;
@@ -153,7 +148,7 @@
     transition: opacity 0.4s ease-in;
 
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: scale(0.65) translate(-50%, -50%);
     transform-origin: top left;

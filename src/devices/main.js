@@ -27,7 +27,7 @@ const interpolation = (baseScale, containerHeight) => {
 const resize = (e) => {
     let h = e[0].contentRect.height;
 
-    const scale = interpolation(0.7, h);
+    const scale = interpolation(0.6, h);
     const style = device.style;
     style.setProperty('transform', `scale(${scale}) translate(-50%, -50%)`)
 }

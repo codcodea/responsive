@@ -2,188 +2,199 @@
 @import "./_devices.css";
 
 body {
-    height: 100vh;
-    background-color: var(--bg-color);
-    display: grid;
-    grid-template: 140px auto 140px / 1fr;
+	height: 100vh;
+	background-color: var(--bg-color);
+	display: grid;
+	grid-template: 140px auto 70px / 1fr;
 }
 
 .navigator {
-    width: 100%;
-    position: relative;
+	width: 100%;
+	position: relative;
 
-    grid-row: 1;
-    grid-column: 1;
+	grid-row: 1;
+	grid-column: 1;
 
-    flex-direction: column;
-    gap: 0.5em;
+	flex-direction: column;
+	gap: 0.5em;
 }
 
 .button-group {
-    width: 100%;
-    opacity: 1;
-    transition: opacity 0.4s ease-out;
+	width: 100%;
+	opacity: 1;
+	transition: opacity 0.4s ease-out;
 }
 
 .button-group button {
-    width: 100px;
-    padding: 10px 24px;
-    margin: auto 0.5vw;
-    border-radius: 3px;
+	width: 100px;
+	padding: 10px 24px;
+	margin: auto 0.5vw;
+	border-radius: 3px;
 
-    background-color: transparent;
-    border: 1px solid rgb(0, 0, 0);
-    color: rgb(24, 24, 24);
-    user-select: none;
+	background-color: transparent;
+	border: 1px solid rgb(0, 0, 0);
+	color: rgb(24, 24, 24);
+	user-select: none;
 
-    transition: scale 0.2s ease-out, color 0.5s ease-out;
+	transition: scale 0.2s ease-out, color 0.5s ease-out;
 }
 
 .button-group .content {
-    background-color: rgb(128, 128, 128);
+	background-color: rgb(128, 128, 128);
 }
 
+/* .button-group .content:last-of-type {
+	background-color: #bdbdbd;
+} */
+
 .content:hover {
-    scale: 1.06;
-    color: rgb(58, 58, 58);
+	scale: 1.06;
+	color: rgb(58, 58, 58);
 }
 
 .button-group .device {
-    background-color: rgb(45, 45, 45);
-    color: rgb(150, 150, 150);
+	background-color: rgb(45, 45, 45);
+	color: rgb(150, 150, 150);
+}
 
+.button-group .device:last-of-type {
+	background-color: #cbbfae;
+	color: rgb(24, 24, 24);
+}
+
+.button-group .footer {
+	background-color: rgb(45, 45, 45);
+	color: rgb(150, 150, 150);
 }
 
 .device:hover {
-    scale: 1.06;
-    color: rgb(213, 213, 213);
+	scale: 1.06;
+	color: rgb(213, 213, 213);
 }
 
 .container {
-    width: 100%;
+	width: 100%;
 
-    grid-row: 2;
-    grid-column: 1;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: white;
-    transition: opacity 1s cubic-bezier(0.87, 0.07, 0.63, 0.71);
-    transition-delay: 1s;
-    opacity: 0;
+	grid-row: 2;
+	grid-column: 1;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: white;
+	transition: opacity 1s cubic-bezier(0.87, 0.07, 0.63, 0.71);
+	transition-delay: 1s;
+	opacity: 0;
 }
 
 img {
-    position: fixed;
+	position: fixed;
 }
 
 #toggle-frame {
-    margin-top: 2vh;
+	margin-top: 2vh;
 }
 
 .active:is(.mobile-device, .tablet-device, .laptop-device, .desktop-device) {
-    opacity: 1;
-    z-index: 3;
+	opacity: 1;
+	z-index: 3;
 }
 
 footer {
-    grid-row: 3;
-    grid-column: 1;
+	grid-row: 3;
+	grid-column: 1;
 }
 
 @media (max-width: 768px) {
+	body {
+		background-color: var(--bg-mobile);
+		overflow: hidden;
+	}
 
-    body {
-        background-color: var(--bg-mobile);
-        overflow: hidden;
-    }
+	.navigator {
+		position: sticky;
+		top: 0px;
+		z-index: 4;
+		margin: 0;
+		padding: 0;
+		height: 80px;
+		background-color: rgb(2, 2, 2);
+	}
 
-    .navigator {
-        position: sticky;
-        top: 0px;
-        z-index: 4;
-        margin: 0;
-        padding: 0;
-        height: 80px;
-        background-color: rgb(2, 2, 2);
+	.devices {
+		display: none;
+	}
 
-    }
+	.container {
+		min-height: 85vh !important;
+		margin-top: 0vh !important;
+	}
 
-    .devices {
-        display: none;
-    }
+	.button-group {
+		padding: 0 5vw;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 2vw;
+	}
 
-    .container {
-        min-height: 85vh !important;
-        margin-top: 0vh !important;
-    }
+	.button-group button {
+		width: unset;
+		max-width: 100px;
+	}
 
-    .button-group {
-        padding: 0 5vw;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 2vw;
-    }
+	.button-group .content {
+		flex: 1;
+	}
 
-    .button-group button {
-        width: unset;
-        max-width: 100px;
-    }
+	.button-group .open {
+		background-color: rgb(199, 199, 199);
+	}
 
-    .button-group .content {
-        flex: 1;
-    }
+	.mobile-iframe {
+		top: 250px;
+		height: 88vh;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
 
-    .button-group .open {
-        background-color: rgb(199, 199, 199);
-    }
+	.mobile {
+		top: 350px !important;
+		left: 50%;
+		transform: scale(0.8) translate(-50%, -50%) !important;
+		background-color: var(--bg-mobile);
+		transition-duration: 0ms;
+	}
 
-    .mobile-iframe {
-        top: 250px;
-        height: 88vh;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
+	.mobile-device,
+	.container {
+		transition-duration: 0ms;
+	}
 
-    .mobile {
-        top: 350px !important;
-        left: 50%;
-        transform: scale(.8) translate(-50%, -50%) !important;
-        background-color: var(--bg-mobile);
-        transition-duration: 0ms;
-    }
+	.devices > img {
+		display: none;
+	}
 
-    .mobile-device,
-    .container {
-        transition-duration: 0ms;
-    }
+	.button-group {
+		margin-top: 0;
+	}
 
-    .devices>img {
-        display: none;
-    }
+	.button-group button {
+		padding: 5px;
+		margin-top: 2px;
+	}
 
-    .button-group {
-        margin-top: 0;
-    }
+	.open {
+		background-color: antiquewhite;
+	}
 
-    .button-group button {
-        padding: 5px;
-        margin-top: 2px;
-    }
-
-    .open {
-        background-color: antiquewhite;
-    }
-
-    footer {
-        display: none;
-    }
+	footer {
+		display: none;
+	}
 }
 
 @media (min-width: 769px) {
-    .navigator {
-        position: relative;
-        z-index: 4;
-    }
+	.navigator {
+		position: relative;
+		z-index: 4;
+	}
 }
 
 /* 
